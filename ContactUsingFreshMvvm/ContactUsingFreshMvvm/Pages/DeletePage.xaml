@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContactUsingFreshMvvm.Pages.DeletePage">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label Text="Contact Name" ></Label>
+            <Entry Text="{Binding Contact.Name}"></Entry>
+            <Label Text="Contact Email" ></Label>
+            <Entry Text="{Binding Contact.Email}"></Entry>
+            <Label Text="Contact Dob" ></Label>
+            <Entry Text="{Binding Contact.Dob}"></Entry>
+            <Label Text="Are you sure you want to delete?" FontAttributes="Bold" FontSize="Large"></Label>
+            <Button Text="Yes" Command="{Binding DeleteCommand}"></Button>
+            <Button Text="No" Command="{Binding No}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
